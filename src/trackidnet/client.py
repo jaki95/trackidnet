@@ -2,7 +2,7 @@
 
 import httpx
 
-from trackidnet_client.models import Tracklist, SearchResult
+from trackidnet.models import Tracklist, SearchResult
 
 
 class TrackIDNet:
