@@ -19,8 +19,8 @@ class Tracklist(BaseModel):
 
     model_config = ConfigDict(populate_by_name=True)
 
-    name: str | None = None
-    slug: str | None = None
+    name: str = Field(alias="title")
+    slug: str
     url: str | None = None
     duration: str | None = None
     tracks: list[Track] | None = None
